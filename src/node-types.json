@@ -6929,6 +6929,7 @@
   {
     "type": "source_file",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
       "multiple": true,
@@ -9494,12 +9495,20 @@
     "named": false
   },
   {
+    "type": "exists",
+    "named": false
+  },
+  {
     "type": "false",
     "named": false
   },
   {
     "type": "field_identifier",
     "named": true
+  },
+  {
+    "type": "forall",
+    "named": false
   },
   {
     "type": "friend",
@@ -9660,10 +9669,6 @@
   {
     "type": "true",
     "named": false
-  },
-  {
-    "type": "type_identifier",
-    "named": true
   },
   {
     "type": "type_parameter_identifier",

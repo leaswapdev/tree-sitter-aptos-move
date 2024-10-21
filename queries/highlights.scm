@@ -34,8 +34,6 @@
 (module_identity module: (module_identifier)  @namespace.module.name)
 
 ;; Function calls
-(call_expression access: (module_access module: (module_identifier)  @namespace.module.name))
-(call_expression access: (module_access member: (identifier)  @function.call))
 
 
 (label (identifier)  @label)
@@ -75,7 +73,6 @@
 (variant variant_name: (variant_identifier)  @constructor.name)
 
 ;; Packs
-(pack_expression access: (module_access)  @constructor.name)
 
 ;; Unpacks
 ;; TODO: go into variants
@@ -86,7 +83,6 @@
 (module_access module: (module_identifier)  member: (identifier) @constructor.name)
 
 ;; Lambdas
-(lambda_bindings (bind_var (variable_identifier)  @variable.parameter))
 
 
 ;; Operators
@@ -122,9 +118,6 @@
  "native" 
  "struct" 
  "use" 
- "public" 
- "public(package)" 
- "public(friend)" 
  "spec" 
  "module" 
  "abort" 
