@@ -1,3 +1,10 @@
+LeaSwapDev's Note:
+Neovim doesn't install queries automatically so please create symbolic link like:
+
+```
+ln -s ~/tree-sitter-move/queries ~/.config/nvim/queries/move
+```
+
 # Tree Sitter for Move
 
 This is a WIP implementation of tree sitter for Move.
